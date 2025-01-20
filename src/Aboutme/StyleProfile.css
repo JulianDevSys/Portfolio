@@ -1,0 +1,8 @@
+.my_profile{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 53%;
+    font-size: 20px;
+    color: white;
+}
