@@ -1,8 +1,90 @@
+#principal_profile{
+  display: flex;
+  gap: 10px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+  padding-top: 10px;
+  border-radius: 15px;
+  margin-top: 30px ;
+}
+
+#principal_profile:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.2));
+}
+
 .my_profile{
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    width: 53%;
-    font-size: 20px;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  width: 53%;
+  font-size: 20px;
+  color: white;
+}
+
+h1 {
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+h1:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.images{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.img{
+  display: flex;
+  width: 90%;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  opacity: 0;
+  transform: translateX(50%);
+  animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+  
+.image{
+  display: flex;
+  width: 45%;
+  height: 150px;
+  border-radius: 70px;
+}
+
+.proactive{
+  display: flex;
+  width: 90%;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagenes{
+  display: flex;
+  width: 155px;
+  height: 160px;
+  border-radius: 70px;
+}
+
+.image, .imagenes {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.image:hover, .imagenes:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }

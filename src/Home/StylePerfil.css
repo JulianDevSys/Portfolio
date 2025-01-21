@@ -1,119 +1,116 @@
 body {
-    background: linear-gradient(45deg, #3498db, #8e44ad, #2ecc71);
-    background-size: 600% 600%;
-    animation: gradientAnimation 10s ease infinite;
-  }
-  
-  @keyframes gradientAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
+  background: linear-gradient(45deg, #3498db, #8e44ad, #2ecc71);
+  background-size: 600% 600%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
 
 .principal_container{
-    height: 100vh;
-    overflow: scroll;
+  height: 100vh;
+  overflow: scroll;
 
 }
 
 /*  efecto de desvanecimiento cuando el usuario hace scroll */
 
 
-  /* Animación para secciones adicionales */
+/* Animación para secciones adicionales */
 
 
 
 .informatioAndimage{
-    display: flex;
-    height: 85%;
+  display: flex;
+  height: 85%;
 }
 
 .my_information{
-    display: flex;
-    padding-left: 10px;
-    flex-direction: column;
-    color: white;
-    width: 50%;
-    height: 90%;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-  animation: fadeIn 2s forwards;
-
-  
+  display: flex;
+  padding-left: 10px;
+  flex-direction: column;
+  color: white;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+animation: fadeIn 2s forwards;  
 }
 
 @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
+  to {
+    opacity: 1;
   }
+}
 
 .animate__animated.animate__bounce {
-    --animate-duration: 2s;
+  --animate-duration: 2s;
+}
+
+.about_me{
+  color: white;
+  width: 0; /* Empieza con el ancho en 0 */
+  white-space: nowrap; /* Evita el salto de línea */
+  overflow: hidden; /* Esconde el texto fuera del contenedor */
+  border-right: 3px solid #3498db; /* Simula el cursor */
+  animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite; /* Animación */
   }
 
-  .about_me{
-    color: white;
-    width: 0; /* Empieza con el ancho en 0 */
-    white-space: nowrap; /* Evita el salto de línea */
-    overflow: hidden; /* Esconde el texto fuera del contenedor */
-    border-right: 3px solid #3498db; /* Simula el cursor */
-    animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite; /* Animación */
+  @keyframes typing  {
+      from {
+        width: 0; /* Empieza sin mostrar nada */
+      }
+      to {
+        width: 68%; /* Termina mostrando todo el texto */
+      }
     }
-
-    @keyframes typing  {
-        from {
-          width: 0; /* Empieza sin mostrar nada */
-        }
-        to {
-          width: 68%; /* Termina mostrando todo el texto */
-        }
+    
+    @keyframes blink {
+      50% {
+        border-color: transparent; /* Hace que el cursor parpadee */
       }
-      
-      @keyframes blink {
-        50% {
-          border-color: transparent; /* Hace que el cursor parpadee */
-        }
-      }
+    }
 
 
 .social-links{
-    display: flex;
-    width: 20%;
-    justify-content: space-around;
-    color: white; /* Color base */
-    transition: all 0.3s ease; /* Transición suave */
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+  color: white; /* Color base */
+  transition: all 0.3s ease; /* Transición suave */
 }
 .social-links a:hover {
-    color: #3498db; /* Cambia a un color brillante al pasar el cursor */
-    transform: scale(1.2); /* Escala ligeramente el icono */
-  }
+  color: #3498db; /* Cambia a un color brillante al pasar el cursor */
+  transform: scale(1.2); /* Escala ligeramente el icono */
+}
 
 .imgaen{
-    display: flex;
-    color: white;
-    width: 50%;
-    height: 90%;  
-    justify-content: center;
+  display: flex;
+  color: white;
+  width: 50%;
+  height: 100%;  
 }
 
 .image_user{
-    height: 220px;
-    width: 200px;
-    border-radius: 100px;
-    border-style: inset;
-    border-color: red;
-    margin: auto;
-    box-shadow: 0 10px 30px rgba(189, 47, 47, 0.1); /* Agrega sombra suave */
+  height: 220px;
+  width: 200px;
+  border-radius: 100px;
+  border-style: inset;
+  border-color: red;
+  margin: auto;
+  box-shadow: 0 10px 30px rgba(189, 47, 47, 0.1); /* Agrega sombra suave */
 }
 
 
-  .imgaen img {
-    transition: transform 0.5s ease-out;
-  }
-  
-  .imgaen img:hover {
-    transform: scale(1.1); /* Hace un zoom al pasar el cursor */
-  }
+.imgaen img {
+  transition: transform 0.5s ease-out;
+}
+
+.imgaen img:hover {
+  transform: scale(1.1); /* Hace un zoom al pasar el cursor */
+}

@@ -4,11 +4,9 @@ import { Routes, Route, Link } from 'react-router-dom';
 function App() {
   
   return (
-    
-    <Routes>
-    <Route path="/" element={<Perfil />} />
-    <Route path="/Aboutme" element={<Profile />} />
-  </Routes>
+    <>
+    <Perfil />
+   </>
   )
 }
 
