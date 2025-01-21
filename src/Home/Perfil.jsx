@@ -3,6 +3,7 @@ import Header from './Header'
 import "./StylePerfil.css"
 import 'animate.css';
 import Profile from '../Aboutme/Profile';
+import MyProyects from '../projects/MyProyects';
 
 
 export default function Perfil() {
@@ -35,9 +36,14 @@ export default function Perfil() {
             </div>
 
 
-            <div>
+            <div className='Profile'>
                 < Profile />
             </div>
+
+            <div className='MyProjects'>
+                <MyProyects/>
+            </div>
+            
         </div>
 
     )

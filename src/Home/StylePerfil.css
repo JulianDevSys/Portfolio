@@ -114,3 +114,14 @@ animation: fadeIn 2s forwards;
 .imgaen img:hover {
   transform: scale(1.1); /* Hace un zoom al pasar el cursor */
 }
+
+.Profile{
+  display: flex;
+  height: 100vh;
+}
+
+.MyProjects{
+  display: flex;
+  height: 100vh;
+  
+}
