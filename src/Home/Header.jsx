@@ -1,11 +1,15 @@
 import "./StyleHeader.css"
-import { useNavigate } from 'react-router-dom';
 export default function Header() {
 
 
-    const click = () => {
+    const redirectAboutMe = () => {
         const redirect = document.getElementById("principal_profile")
         redirect.scrollIntoView({ behavior: "smooth" })
+    }
+
+    const redirectProjects = () => {
+        const redirects = document.getElementById("container_projects")
+        redirects.scrollIntoView({ behavior: "smooth" })    
     }
 
     return (
@@ -14,7 +18,8 @@ export default function Header() {
 
             <div className="options">
                 <p className="opciones">Home</p>
-                <p className="opciones" onClick={() => click()}>About</p>
+                <p className="opciones" onClick={() => redirectAboutMe()}>About</p>
+                <p className="opciones" onClick={() => redirectProjects()}>Projects</p>
                 <p className="opciones">Contact</p>
             </div>
         </div>

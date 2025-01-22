@@ -25,12 +25,12 @@ export default function MyProyects(){
         
 
     return(
-        <div className="container_projects">
+        <div id="container_projects">
 
             <div className="projects">
 
             <div className="title">
-            <h1> Projects</h1> </div>
+            <h1> My projects</h1> </div>
 
             <div className="my_projects">
                 

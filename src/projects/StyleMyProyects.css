@@ -1,8 +1,7 @@
-.container_projects{
+#container_projects{
     display: flex;
     gap: 10px;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-    padding-top: 10px;
     border-radius: 15px;
     margin-top: 30px ;
     height: 100vh;
@@ -13,10 +12,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    
+    width: 100%;    
+}
 
-    }
+.title{
+    color: white;
+    font-size: 25PX;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
 
 .my_projects{
     overflow:auto; 
@@ -27,6 +30,8 @@
     height: 60%;
     gap: 10px; 
     padding: 10px;
+    border-style: groove;
+    border-color: aquamarine;
 }
 
 .get_proyects{
@@ -36,26 +41,38 @@
     width: 33%;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .image_projects{
     display: flex;
-   background-color: chartreuse;
-    width: 100%;
-    border-radius: 15px;
+    width: 95%;   
     height: 90%;
+    border-radius: 15px;
+    border-style:inset;
+    border-color: aqua;
+    box-shadow: 10px 10px 20px rgba(0, 255, 255, 0.4);
+
+
 }
+
+.image_projects:hover {
+    transform: scale(1.1); /* Hace un zoom al pasar el cursor */
+  }
+  
 
 .button{
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 95%;
 }
 
 .information_projects{
     width: 100%;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bolder;
     border-radius: 5px;
+    border-style: groove;
+    border-color: rgb(38, 182, 218);
     cursor: pointer;
 }
