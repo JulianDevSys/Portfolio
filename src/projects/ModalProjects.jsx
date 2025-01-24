@@ -1,9 +1,31 @@
+import { useEffect, useState } from "react"
+import useProjectById from "../Hooks/useProjectById"
 
+export default function ModalProjects({ids}){
 
-export default function ModalProjects(){
+    const [infoProjects, setInfoProjects]=useState([])
+
+    useEffect(()=>{
+        useProjectById(ids,(res,err)=>{
+            if(err){
+                alert(err)
+            }
+            setInfoProjects(res)
+
+        })
+    })
+    
     return(
-        <div>
-            <h1>terminar</h1>
+        <div >
+            <div>
+
+            <button>X</button>
+            <input value={infoProjects.title} type="text" placeholder="title"></input>
+            <input value={infoProjects.programmed} type="text" placeholder="title"></input>
+            <input value={infoProjects.description} type="text" placeholder="title"></input>
+            <button>go to project</button>
+        </div>
+        
         </div>
     )
 }
