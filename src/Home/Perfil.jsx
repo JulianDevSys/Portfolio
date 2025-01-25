@@ -4,6 +4,7 @@ import "./StylePerfil.css"
 import 'animate.css';
 import Profile from '../Aboutme/Profile';
 import MyProyects from '../projects/MyProyects';
+import Contactme from '../Contact/Contactme';
 
 
 export default function Perfil() {
@@ -44,6 +45,10 @@ export default function Perfil() {
                 <MyProyects/>
             </div>
             
+            <div>
+                <Contactme/>
+            </div>
+
         </div>
 
     )

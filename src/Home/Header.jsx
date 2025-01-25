@@ -11,6 +11,11 @@ export default function Header() {
         const redirects = document.getElementById("container_projects")
         redirects.scrollIntoView({ behavior: "smooth" })    
     }
+    const redirectContact = () => {
+        const redirects = document.getElementById("container_contact")
+        redirects.scrollIntoView({ behavior: "smooth" })    
+    }
+
 
     return (
         <div className="header">
@@ -20,7 +25,7 @@ export default function Header() {
                 <p className="opciones">Home</p>
                 <p className="opciones" onClick={() => redirectAboutMe()}>About</p>
                 <p className="opciones" onClick={() => redirectProjects()}>Projects</p>
-                <p className="opciones">Contact</p>
+                <p className="opciones" onClick={() => redirectContact()}>Contact</p>
             </div>
         </div>
     )

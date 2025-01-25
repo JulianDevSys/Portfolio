@@ -4,6 +4,7 @@ import "./StyleMyProyects.css"
 import { useEffect } from "react"
 import getProjects from "../Hooks/getProjects"
 import ModalProjects from "./ModalProjects"
+import Hanged from "../image/CapturaHanged.PNG"
 
 
 export default function MyProyects() {
