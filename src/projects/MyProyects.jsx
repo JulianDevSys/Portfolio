@@ -39,7 +39,7 @@ export default function MyProyects() {
                             <div className="get_proyects">
                                 <img className="image_projects" key={element.id} src={element.posterUrl} alt="imagenes" />
                                 <div className="button">
-                                    <button className="information_projects" onClick={()=> setModal(<ModalProjects  ids={element.id} /> )}>Information</button>
+                                    <button className="information_projects" onClick={()=> setModal(<ModalProjects  ids={element.id}  close={()=> setModal([])}/> )}>Information</button>
                                 </div>
 
                             </div>

@@ -6,6 +6,6 @@ export default function useProjectById(ids, callback){
     if(!infoProjects){
         return callback(undefined, "No Se Encontro El Projecto")
     }
-    const {id,game,posterUrl,...resto}=infoProjects
+    const {id,posterUrl,...resto}=infoProjects
     callback(resto)
 }
