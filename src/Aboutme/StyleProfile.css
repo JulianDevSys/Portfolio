@@ -68,16 +68,15 @@ h1:hover {
   display: flex;
   width: 90%;
   height: 50%;
-  align-items: center;
   justify-content: center;
-  align-items: center;
 }
 
 .imagenes{
   display: flex;
-  width: 155px;
+  width: 45%;
   height: 160px;
   border-radius: 70px;
+
 }
 
 .image, .imagenes {

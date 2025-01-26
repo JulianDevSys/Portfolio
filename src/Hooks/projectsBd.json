@@ -5,7 +5,6 @@
       "id": 1,
       "title": "HANGED",
       "programmed": "Julian Castro Henao",
-      "posterUrl": "../image/CapturaHanged.PNG",
       "game": "http://hangmangamepro.netlify.app",
       "description": "implementation of the classic Hangman game, developed in React JSX. It includes images that are progressively completed to form the body of the hanged man as mistakes are made."
     },
@@ -13,7 +12,6 @@
         "id": 2,
         "title": "Movies",
         "programmed": "Julian Castro Henao",
-        "posterUrl": "https://img.freepik.com/vector-gratis/ilustracion-planta-frailejon-diseno-plano_23-2150043617.jpg",
         "game": "https://pagemoviesjul.netlify.app",
          "description": "This project is a web application designed to explore and search for movies intuitively. Developed with React, the page displays additional details for each movie accessible through an interactive modal."
       },
@@ -21,7 +19,6 @@
         "id": 3,
         "title": "Gameheaver",
         "programmed": "Julian Castro Henao",
-        "posterUrl": "https://img.freepik.com/vector-gratis/ilustracion-planta-frailejon-diseno-plano_23-2150043617.jpg",
         "game": "http://hangmangamepro.netlify.app",
          "description": "online entertainment page where you can enjoy your favorite games, compete with friends and improve your skills while having fun."
       },
@@ -29,7 +26,6 @@
         "id": 4,
         "title": "HANGED",
         "programmed": "Julian Castro Henao",
-        "posterUrl": "https://img.freepik.com/vector-gratis/ilustracion-planta-frailejon-diseno-plano_23-2150043617.jpg",
         "game": "http://hangmangamepro.netlify.app",
          "description": "implementation of the classic Hangman game, developed in React JSX. It includes images that are progressively completed to form the body of the hanged man as mistakes are made."
       }

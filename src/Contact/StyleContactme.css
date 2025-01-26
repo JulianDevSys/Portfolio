@@ -1,11 +1,48 @@
 
+
+
 #container_contact{
     display: flex;
+    flex-direction: column;
     gap: 10px;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
     border-radius: 15px;
     margin-top: 30px ;
     height: 100vh;
-
 }
 
+
+.contend{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: brown;
+    height: 80%;
+}
+
+
+.imagens_show{
+    display: flex;
+    width:40%;
+    height: 60%;
+    background-color: aqua;
+    padding: 5px;
+}
+
+.img_1{
+    width: 0%;
+    height: 100%;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5 ease;
+    border-radius: 5px;
+}
+
+.img_1:hover{
+    cursor: crosshair;
+    width: 50%;
+    opacity: 1;
+    filter: contrast(120%);
+
+}

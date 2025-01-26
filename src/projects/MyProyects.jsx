@@ -5,6 +5,7 @@ import { useEffect } from "react"
 import getProjects from "../Hooks/getProjects"
 import ModalProjects from "./ModalProjects"
 import Hanged from "../image/CapturaHanged.PNG"
+import Movies from "../image/CapturaMovies.PNG"
 
 
 export default function MyProyects() {
@@ -13,7 +14,7 @@ export default function MyProyects() {
     const [modal, setModal]= useState([])
 
 
-
+const arreglo=[Hanged,Movies]
     useEffect(() => {
 
         getProjects((res) => {
@@ -35,11 +36,12 @@ export default function MyProyects() {
 
                     
 
-                    {Proyectos.map((element) => {
+                    {Proyectos.map((element,index) => {
                         return (
                             <div className="get_proyects">
-                                <img className="image_projects" key={element.id} src={element.posterUrl} alt="imagenes" />
+                                <img className="image_projects" key={element.id} src={arreglo[index]} alt="imagenes" />
                                 <div className="button">
+                                    
                                     <button className="information_projects" onClick={()=> setModal(<ModalProjects  ids={element.id}  close={()=> setModal([])}/> )}>Information</button>
                                 </div>
 
