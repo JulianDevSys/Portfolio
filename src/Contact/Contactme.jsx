@@ -19,7 +19,7 @@ export default function Contactme(){
                 <input className= "input_contact" value="jucastrohenao@gmail.com"type="email"></input>
                 <label htmlFor="title" className="label_modal">Number</label>
                 <input  className= "input_contact" value= "3028121522" type= "text"></input>
-
+                <label htmlFor="title" className="label_modal">Description</label>
                 <p className="modal_description">{"I am always looking for new opportunities to grow professionally and add value to innovative projects. If you represent a company or are interested in my skills, do not hesitate to contact me. I am available for collaborations, interviews or any questions related to my work. I hope to talk to you soon!"} </p>
            
         </div>

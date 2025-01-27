@@ -1,7 +1,7 @@
 
 import { useState } from "react"
 import "./StyleMyProyects.css"
-import { useEffect } from "react"
+import { useEffect , useRef  } from "react"
 import getProjects from "../Hooks/getProjects"
 import ModalProjects from "./ModalProjects"
 import Hanged from "../image/CapturaHanged.PNG"
@@ -12,15 +12,35 @@ export default function MyProyects() {
 
     const [Proyectos, setProyectos] = useState([])
     const [modal, setModal]= useState([])
+    const carouselRef = useRef(null)
+    
 
 
 const arreglo=[Hanged,Movies]
+
     useEffect(() => {
 
         getProjects((res) => {
             setProyectos(res)
         })
     }, [])
+
+    useEffect(() => {
+        const scrollInterval = setInterval(() => {
+            if (carouselRef.current) {
+                // Realiza el scroll horizontal automáticamente
+                carouselRef.current.scrollLeft += 1;
+                if (
+                    carouselRef.current.scrollLeft + carouselRef.current.offsetWidth >=
+                    carouselRef.current.scrollWidth
+                ) {
+                    // Reinicia el scroll al inicio si llega al final
+                    carouselRef.current.scrollLeft = 0;
+                }
+            }
+        }, 30); // Velocidad de scroll
+        return () => clearInterval(scrollInterval); // Limpia el intervalo al desmontar
+    }, []);
 
 
     return (
@@ -32,7 +52,7 @@ const arreglo=[Hanged,Movies]
                     <h1> My projects</h1> </div>
                     {modal}
 
-                <div className="my_projects">
+                <div className="my_projects" ref={carouselRef}>
 
                     
 

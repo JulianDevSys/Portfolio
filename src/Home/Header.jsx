@@ -22,7 +22,6 @@ export default function Header() {
             <div className="name"><p className="nombre">Julian</p><p> Castro</p></div>
 
             <div className="options">
-                <p className="opciones">Home</p>
                 <p className="opciones" onClick={() => redirectAboutMe()}>About</p>
                 <p className="opciones" onClick={() => redirectProjects()}>Projects</p>
                 <p className="opciones" onClick={() => redirectContact()}>Contact</p>

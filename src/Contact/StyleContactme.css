@@ -27,6 +27,7 @@
     gap: 10px;
     border-style: groove;
     border-color: aquamarine;
+    border-radius: 5px;
 }
 
 .input_contact{
@@ -35,7 +36,8 @@
     height: 10%;
     border-radius: 5px;
     padding: 5px;
-    
+    font-size: 100%;
+    border-color: aquamarine;
 }
 
 
@@ -54,6 +56,8 @@
     opacity: .8;
     transition: .5 ease;
     border-radius: 5px;
+    border-style: groove;
+    border-color:aqua;
 }
 
 .img_1:hover{
